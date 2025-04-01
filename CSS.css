@@ -111,7 +111,7 @@ body {
 
 @media (max-width: 600px) {
     body {
-        font-size: 14px; /* Kleinere Schriftgröße für mobile Geräte */
+        font-size: 14px; /* Kleinere Schriftgrösse für mobile Geräte */
     }
 
     header {
@@ -138,7 +138,7 @@ body {
 @media (max-width: 400px) {
     .question {
         padding: 15px; /* Noch weniger Innenabstand für sehr kleine Bildschirme */
-        font-size: 12px; /* Kleinere Schriftgröße */
+        font-size: 12px; /* Kleinere Schriftgrösse */
     }
 
     button {
@@ -148,7 +148,7 @@ body {
 
 @media (max-width: 600px) {
     footer {
-        font-size: 12px; /* Kleinere Schriftgröße im Footer */
+        font-size: 12px; /* Kleinere Schriftgrösse im Footer */
         padding: 8px 0; /* Weniger Padding im Footer */
     }
 }
