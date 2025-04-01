@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digitale Schnitzeljagd</title>
+    <link rel="stylesheet" href="CSS.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Willkommen zur digitalen Schnitzeljagd!</h1>
+    </header>
+    <main>
+      <section id="questions">
+        <div class="question" id="station1">
+          <h2>Station 1: Eingangsbereich</h2>
+          <p>Welche Nummer hat das El Tony im Automaten im Eingangsbereich?</p>
+          <input type="text" id="answer1" />
+          <button onclick="showTip(1)">Tipp</button>
+          <p class="tip" id="tip1" style="display: none">
+            Der Automat steht direkt im Eingangsbereich.
+          </p>
+        </div>
+        <div class="question" id="station2" style="display: none">
+          <h2>Station 2: Erdgeschoss</h2>
+          <p>Wie viele Klassenzimmer gibt es im Erdgeschoss?</p>
+          <input type="text" id="answer2" />
+          <button onclick="showTip(2)">Tipp</button>
+          <p class="tip" id="tip2" style="display: none">
+            Zähle die Türen mit Stundenplänen.
+          </p>
+        </div>
+        <div class="question" id="station3" style="display: none">
+          <h2>Station 3: Mensa</h2>
+          <p>Wie viele Tischreihen gibt es in der Mensa?</p>
+          <input type="text" id="answer3" />
+          <button onclick="showTip(3)">Tipp</button>
+          <p class="tip" id="tip3" style="display: none">
+            Schau dir die Anordnung der Tische an.
+          </p>
+        </div>
+        <div class="question" id="station4" style="display: none">
+          <h2>Station 4: Zimmer</h2>
+          <p>Was ist im Zimmer E.35.3?</p>
+          <input type="text" id="answer4" />
+          <button onclick="showTip(4)">Tipp</button>
+          <p class="tip" id="tip4" style="display: none">
+            Es ist ein Ort für Hilfe und Informationen.
+          </p>
+        </div>
+        <div class="question" id="station5" style="display: none">
+          <h2>Station 5: "Stay Focused"</h2>
+          <p>
+            Welches Tier ist im 1. Stock beim Schriftzug “Stay Focused”
+            dargestellt?
+          </p>
+          <input type="text" id="answer5" />
+          <button onclick="showTip(5)">Tipp</button>
+          <p class="tip" id="tip5" style="display: none">
+            Es ist ein Tier, das oft im Wasser lebt.
+          </p>
+        </div>
+        <div class="question" id="station6" style="display: none">
+          <h2>Station 6: 2.Stock</h2>
+          <p>Wie viele Tische gibt es im 2. Stock im Gang?</p>
+          <input type="text" id="answer6" />
+          <button onclick="showTip(6)">Tipp</button>
+          <p class="tip" id="tip6" style="display: none">
+            Zähle die Tische im Flur.
+          </p>
+        </div>
+        <div class="question" id="station7" style="display: none">
+          <h2>Station 7: "It's okay to..."</h2>
+          <p>
+            Was sagt das Zweitunterste Schild unter “It’s okay to:” im 1. Stock?
+          </p>
+          <input type="text" id="answer7" />
+          <button onclick="showTip(7)">Tipp</button>
+          <p class="tip" id="tip7" style="display: none">
+            Es ist eine positive Botschaft.
+          </p>
+        </div>
+        <div class="question" id="station8" style="display: none">
+          <h2>Station 8: Sanitätszimmer</h2>
+          <p>Auf welchem Stock befindet sich das Sanitätszimmer?</p>
+          <input type="text" id="answer8" />
+          <button onclick="showTip(8)">Tipp</button>
+          <p class="tip" id="tip8" style="display: none">
+            Es ist auf dem selben Stock wie die Garage.
+          </p>
+        </div>
+        <div class="question" id="station9" style="display: none">
+          <h2>Station 9: Garage für E-Bikes</h2>
+          <p>Wie viele Schilder gibt es in der Garage für E-Bikes?</p>
+          <input type="text" id="answer9" />
+          <button onclick="showTip(9)">Tipp</button>
+          <p class="tip" id="tip9" style="display: none">
+            Die Tür zur Garage ist nur grau. Achte auf die Schilder an der Wand.
+          </p>
+        </div>
+        <div class="question" id="station10" style="display: none">
+          <h2>Station 10: Sportgebäude</h2>
+          <p>Wie viele Umkleidekabinen gibt es im Sportgebäude?</p>
+          <input type="text" id="answer10" />
+          <button onclick="showTip(10)">Tipp</button>
+          <p class="tip" id="tip10" style="display: none">
+            Hast du die im Anbau auch gezählt?
+          </p>
+        </div>
+      </section>
+      <button onclick="checkAnswers()">Antworten überprüfen</button>
+      <br /><br />
+    </main>
+    <footer>
+      <p>&copy; 2025 Digitale Schnitzeljagd / Gruppe 3</p>
+      <p>
+        Alverde, Bachmann, Podojil, Palladino, Scherer, Wolfensberger, Lischer
+      </p>
+    </footer>
+    <script src="JS.js"></script>
+  </body>
+</html>

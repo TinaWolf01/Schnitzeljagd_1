@@ -1,0 +1,164 @@
+/* Grundlegende Reset-Stile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body-Stile */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header-Stile */
+header {
+    background: #2b593f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Hauptbereich */
+main {
+    max-width: 800px; /* Maximale Breite */
+    margin: 20px auto; /* Zentrierung */
+    padding: 0; /* Innenabstand entfernen */
+    background: transparent; /* Hintergrund transparent machen */
+    border-radius: 0; /* Abgerundete Ecken entfernen */
+    box-shadow: none; /* Schatten entfernen */
+    display: flex; /* Flexbox aktivieren */
+    flex-direction: column; /* Vertikale Anordnung */
+    align-items: center; /* Zentrieren der Inhalte */
+    justify-content: center; /* Vertikale Zentrierung */
+    min-height: 80vh; /* Minimale Höhe für vertikale Zentrierung */
+}
+
+/* Fragenbox-Stile */
+.question {
+    width: 100%; /* Volle Breite */
+    max-width: 600px; /* Maximale Breite der Fragenbox */
+    padding: 40px; /* Innenabstand erhöhen für größere Box */
+    border: 1px solid #ccc; /* Rahmen */
+    border-radius: 8px; /* Abgerundete Ecken */
+    background: #f9f9f9; /* Hintergrundfarbe */
+    margin-bottom: 20px; /* Abstand zwischen den Fragen */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Schatten für die Box */
+    text-align: center; /* Text zentrieren */
+}
+
+/* Abschnittsüberschriften */
+h2 {
+    color: #2b593f;
+    margin-bottom: 10px;
+}
+
+/* Eingabefelder */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button-Stile */
+button {
+    background: #2b593f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2b593f;
+}
+
+/* Richtig/Falsch Stile */
+.correct {
+    background-color: #d4edda; /* grün */
+    border-color: #c3e6cb;
+}
+
+.wrong {
+    background-color: #f8d7da; /* rot */
+    border-color: #f5c6cb;
+}
+
+/* Footer-Stile */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #f4f4f4;
+    margin-top: auto; /* Automatischer Abstand nach oben */
+    border-top: 1px solid #ccc;
+    position: relative; /* Position relativ für Flexbox */
+}
+
+/* Body-Stile anpassen */
+body {
+    display: flex; /* Flexbox aktivieren */
+    flex-direction: column; /* Vertikale Anordnung */
+    min-height: 100vh; /* Minimale Höhe auf 100% der Ansichtshöhe setzen */
+}
+
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Kleinere Schriftgröße für mobile Geräte */
+    }
+
+    header {
+        padding: 15px 0; /* Weniger Padding im Header */
+    }
+
+    .question {
+        padding: 20px; /* Weniger Innenabstand in der Fragenbox */
+    }
+
+    input[type="text"] {
+        padding: 8px; /* Kleinere Innenabstände für Eingabefelder */
+    }
+
+    button {
+        padding: 8px 12px; /* Kleinere Buttons */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Kleinere Überschrift */
+    }
+}
+
+@media (max-width: 400px) {
+    .question {
+        padding: 15px; /* Noch weniger Innenabstand für sehr kleine Bildschirme */
+        font-size: 12px; /* Kleinere Schriftgröße */
+    }
+
+    button {
+        width: 100%; /* Buttons auf volle Breite */
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        font-size: 12px; /* Kleinere Schriftgröße im Footer */
+        padding: 8px 0; /* Weniger Padding im Footer */
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px; /* Weniger Padding im Hauptbereich */
+    }
+
+    .tip {
+        font-size: 12px; /* Kleinere Schriftgröße für Tipps */
+    }
+}
